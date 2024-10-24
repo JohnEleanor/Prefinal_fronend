@@ -15,8 +15,7 @@ export default function Register() {
     e.preventDefault();
     const username = inputs.username;
     const password = inputs.password;
-    const email = inputs.emaill
-
+    const email = inputs.email;
     try {
 
       const response = await fetch('http://localhost/Prefinal/API.php/user/register' , 

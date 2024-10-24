@@ -29,7 +29,6 @@ export default function User() {
 
   const deleteUser = async (event) => {
     const id = event.target.value;
-    // alert("Delete User ID : " + id);  
     try {
       const response = await fetch("http://localhost/Prefinal/API.php/user" , {
         method: "DELETE",
@@ -104,7 +103,7 @@ export default function User() {
                     <td>{item.email}</td>
                     <td>{item.role}</td>
                     <td>
-                      <button onClick={editUser} value={item.id}>Edit</button>
+                      <Link to={`/edit/${item.id}`}><button>Edit</button></Link>
                       <button onClick={deleteUser} value={item.id}>Delete</button>
                     </td>
                   </tr>
