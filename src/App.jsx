@@ -1,4 +1,4 @@
-import  {  BrowserRouter, Routes, Route } from 'react-router-dom'
+import  { Routes, Route } from 'react-router-dom'
 
 import Login from './pages/Login';
 import Register from './pages/Register';
@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <>
-    <BrowserRouter>
+    
       <Routes>
         <Route element={<Login/>} path='/'></Route>
         <Route element={<Register/>} path='/register'></Route>
@@ -27,8 +27,6 @@ export default function App() {
         </Route>
         {/* Protect */}
       </Routes>
-      
-    </BrowserRouter>
     
     </>
   )

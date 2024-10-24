@@ -80,7 +80,7 @@ export default function Home() {
                     {
                         selectProvince.map((item, index) => (
                             <tr key={index}>
-                                <td>{item.index}</td>
+                                <td>{index+1}</td>
                                 <td>{item.zipcode}</td>
                                 <td>{item.province}</td>
                                 <td>{item.district}</td>
